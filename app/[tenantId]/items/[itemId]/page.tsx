@@ -74,7 +74,7 @@ export default function Page({
 
   const handleDelete = () => {
     deleteItem(tenantId, item.id);
-    router.push(`/${tenantId}/items`);
+    router.push("/");
   };
 
   const previewSrc = image || item.imageUrl || "";
