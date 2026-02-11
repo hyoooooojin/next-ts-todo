@@ -1,0 +1,18 @@
+.logo {
+    width: 151px;
+    height: 40px;
+}
+.mobileLogo {
+    display: none;
+}
+
+/* 375px 이하일 때 */
+@media (max-width: 375px) {
+  .logo {
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+  }
+}

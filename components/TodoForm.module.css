@@ -1,0 +1,22 @@
+.todoForm {
+    padding: 2px;
+    display: flex;
+    gap: 16px;
+}
+
+.input {
+    background-color: var(--slate-100);
+    flex: 1;
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 24px;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.button {
+    background-color: var(--slate-200);
+    padding: 12px 24px;
+    border: 2px solid #000;
+    border-radius: 24px;
+    box-shadow: 2px 2px 0px #000;
+}

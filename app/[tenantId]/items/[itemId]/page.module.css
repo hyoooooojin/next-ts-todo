@@ -1,0 +1,143 @@
+.container {   
+  max-width: 1200px;
+  margin: 0 auto;   /* ✅ 가운데 정렬 */
+  padding: 0 20px;  /* ✅ 좌우 여백 */
+}
+
+.title, .titleInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 6px;
+    border: 2px solid var(--slate-900);
+    border-radius: 100px;
+    padding: 12px 9px;
+    text-align: center;
+}
+
+.contentSection {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* 744px 이하일 때 */
+@media (max-width: 744px) {
+  .contentSection {
+    flex-direction: column;
+  }
+}
+
+.imageArea {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--slate-500);
+    border-radius: 16px;
+    background-color: var(--slate-50);
+    text-align: center;
+    position: relative;
+    height: 311px;
+}
+
+.imageContent {
+  width: 100%;
+  height: 100%;       
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noImage {
+    width: 64px;
+    height: 64px;
+
+}
+
+.imageButton {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid var(--slate-200);
+    background-color: var(--slate-200);
+    border-radius: 100%;
+    background-image: url("/imageButton.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* ✅ 꽉 채우기 (잘림 허용) */
+  display: block;
+}
+
+.memoArea {
+    flex: 1;
+    background-image: url("/memo.svg");
+    height: 311px;
+    overflow: hidden;
+}
+
+.memoTitle {
+    text-align: center;
+    color: var(--amber-800);
+}
+
+.memoInput {
+    padding: 12px;
+    background-color: transparent;
+    width: 100%;
+    height: 280px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+.memoText {
+   padding: 12px;
+   max-height: 280px;   /* 🔥 최대 높이 */
+   overflow-y: auto;    /* 🔥 넘치면 스크롤 */
+   line-height: 1.6;
+}
+
+.buttonRow {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.editButton {
+    width: 168px;
+    height: 56px;
+    background-color: var(--slate-200);
+    border: 2px solid var(--slate-900);
+    border-radius: 24px;
+    box-shadow: 2px 2px 0px var(--slate-900);
+}
+
+.saveButton {
+    width: 168px;
+    height: 56px;
+    background-color: var(--lime-300);
+    border: 2px solid var(--slate-900);
+    border-radius: 24px;
+    box-shadow: 2px 2px 0px var(--slate-900);
+}
+
+.deleteButton {
+    width: 168px;
+    height: 56px;
+    background-color: var(--rose-500);
+    border: 2px solid var(--slate-900);
+    border-radius: 24px;
+    box-shadow: 2px 2px 0px var(--slate-900);
+}
+
